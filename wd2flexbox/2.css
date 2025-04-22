@@ -1,0 +1,206 @@
+body {
+    background-color: bisque;
+}
+
+body, html{
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    width: 30%;
+    height: auto;
+}
+
+.flex-cont {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    width: 100vw;
+    max-width: 100%;
+    background-color: white;
+    flex-direction: column;
+}
+
+.box {
+    height: 100px;
+    /* flex-grow: 0;
+    flex-basis: 200px; */
+    flex: 0 0 200px;
+    /* flex: flex growth flex shrink flex basis */
+}
+
+.one { 
+    height: 100px;
+    background-color: red; 
+}
+.two {     height: 100px;
+    background-color: blue; }
+.three {     height: 100px;
+    background-color: green; }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.imgcontainer {
+    flex: 0 1 300px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.imgcontainer img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.textcontainer {
+    flex: 1 1 100%;
+    padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-wrap: nowrap;
+    }
+
+    .imgcontainer {
+        flex: 0 1 300px;
+        width: auto;
+    }
+
+    .textcontainer {
+        flex: 1 1 calc(100% - 340px);
+    }
+}
+
+.container2{
+    /* width: 400px; */
+    padding: 50px;
+    background-color: yellow;
+}
+
+
+.float{
+    float:left;
+    width:30px;
+}
+
+.container2 img{
+    width: 30%;
+    height: auto;
+}
+
+.wrapper{
+    /* width: 100vw; */
+    display: flex;
+}
+
+nav{
+    background-color: #333;
+    flex-grow: 1;
+    /* margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px; */
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul a{
+    text-decoration: none;
+    /* text-align: center; */
+    color: #fff;
+    display:block;
+    padding: 10px;
+    margin: 0px;
+}
+
+nav ul li{
+    text-align: center;
+    flex: 1 1 0;
+    flex-grow: 1;
+    /* padding-left: 60px;
+    padding-right: 60px; */
+}
+
+nav ul a:hover{
+    background-color: #555;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+}
+
+a.tw{
+    background: url(image.png) no-repeat center;
+    background-size: 150%;
+    /* lowkfire */
+}
+
+.fb{
+    background: url(image2.png) no-repeat center;
+    background-size: 180%;
+}
+
+a.fb{
+    padding: 10px;
+}
+
+.socials a{
+    text-indent: -10000px;
+    /* display: none; */
+}
+
+.socials{
+    max-width: 100px;
+}
+
+/* .socials{
+    min-width: 80px;
+    background-size: contain;
+} */
+
+nav .socials{
+    flex-grow: 1;
+}
+
+
+
+@media screen and (min-width: 768px){
+    ul{
+        display: flex;
+        /* justify-content: space-around; */
+
+    }
+    nav li{
+        /* padding: 80px; */
+        flex: 1 1 0;
+    }
+    nav{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        /* puts space between one ul and the other */
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    ul{
+        display: flex;
+        flex-flow: column;
+    }
+}

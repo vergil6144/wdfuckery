@@ -1,0 +1,129 @@
+@font-face {
+    /*used to define custom fonts and make them available for use throughout the CSS file */
+    font-family: inter;
+    src: url(./Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    /*used to define custom fonts and make them available for use throughout the CSS file */
+    font-family: gilroymed;
+    src: url(GILROY-MEDIUM.TTF) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /*used to define custom fonts and make them available for use throughout the CSS file */
+    font-family: gilroybold;
+    src: url(GILROY-BOLD.TTF) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #352f5b;
+    color: #fff;
+}
+
+.list li{
+    background-color: #423a6f;
+    text-align: left;
+}
+
+
+
+.container{
+    font-family: inter;
+    text-align: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.container input::placeholder{
+    text-align: left;
+    color: #55556b;
+}
+
+.container input{
+    font-family: inter;
+    padding: 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    justify-content: center;
+    display: block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    /* background-color: #fff; */
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+}
+
+.container h1{
+    font-family: gilroybold;
+    color: white;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+}
+.list-item{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1px;
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+
+}
+
+.add input{
+    width: 52%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: inter;
+}
+
+
+.add label{
+    /* color: orange; */
+    margin-bottom: 10px;
+}
+
+.del{
+    position: absolute; 
+    /* absolutely relative to parent */
+    cursor: pointer;
+    justify-content: right;
+    /* margin-right:2%;
+    margin-left: auto; */
+    right: 15px;
+    top: 15px;
+    /* 15px from top and bottom */
+}
+
+input[type=text], input[type=text]:focus{
+    border: none;
+    background-color: rgba(0,0,0,0.2);
+    margin-top: 10px;
+    color: white;
+}
+
+.hide{
+    display: none;
+}

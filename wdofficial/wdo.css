@@ -1,0 +1,376 @@
+@font-face {
+    /*used to define custom fonts and make them available for use throughout the CSS file */
+    font-family: tfmovie;
+    src: url(./tffont\ copy.ttf);
+}
+
+@font-face {
+    /*used to define custom fonts and make them available for use throughout the CSS file */
+    font-family: inter;
+    src: url(./Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    /*used to define custom fonts and make them available for use throughout the CSS file */
+    font-family: gilroymed;
+    src: url(GILROY-MEDIUM.TTF) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /*used to define custom fonts and make them available for use throughout the CSS file */
+    font-family: gilroybold;
+    src: url(GILROY-BOLD.TTF) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+}
+
+h2{
+    margin-left: 10px;
+}
+
+img{
+    /* margin-left: 5px; */
+}
+
+h1{
+    margin: 10px;
+}
+
+article{
+    margin: 300px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+p{
+    margin: 5px;
+}
+
+footer{
+    text-align: center;
+    background: #5d6165;
+    bottom: 0px;
+    position: static;
+    height: 60px;
+}
+
+footer p{
+    padding-top:20px;
+    color: white;
+}
+
+.banner{
+    position: relative;
+}
+.banner img{
+    position: relative;
+    max-width: 100%;
+    margin-left: 0px;
+}
+/* sets the max width of the banner to be the width of the viewport */
+.welcometext{
+   background-color: #db1a19;
+   position: absolute;
+   left: 1%;
+   top: 30%;
+   padding: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   color: white;
+} 
+.welcometext h2{
+    font-size: 45px;
+}
+.welcometext h2 span{
+    font-size: 1.3em;
+}
+/* using 30% instead of 200px ensures that the position is retained regardless of window size */
+/* with relative positioning the space is retained, with absolute it isnt. */
+header{
+    position: relative;
+    background-color: #db1a19;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    /* 100% of the viewport width */
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+header h1{
+    position: absolute;
+    color: #178bff;
+    font-family: "tfmovie";
+    font-size: 3em;
+    padding: 0px;
+    text-decoration: underline;
+    left: 0;
+    top: 10%;
+    bottom: 0;
+    right: 0.5%;
+    z-index: -1;
+}
+
+.secondheader{
+    z-index: +1;
+    position: relative;
+    top: 10%;
+    left: 0%;
+    color: white;
+    font-family: "tfmovie";
+    text-decoration: underline;
+}
+
+
+/* .thirdheader{
+    z-index: -1;
+    position: absolute;
+    top: 10px;
+    left: 827px;
+    color: #ff8e00;
+    font-family: "tfmovie";
+    text-decoration: underline;
+} */
+
+.welcometext h2 span{
+    font-family: "tfmovie";
+
+}
+.welcometext h2{
+    font-family: "gilroybold";
+    font-size: 2.3em;
+}
+nav{
+    background-color: #f4f4f4;
+    padding: 5px;
+    position: sticky;
+    top: 100px;
+    /* top:100px means it stops moving 100pxs from the top */
+    left: 0;
+    z-index: 1000;
+    /* padding: 10px 0; */
+    
+    /* width: 100%; */
+    /* sticky means that it stays below the banner until you scroll, and then it sticks to the banner as you go down */
+}
+nav li{
+    width: 50%;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0px 0px;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: none;
+    text-align: center;
+    /* nowrap means it comes on the same mine, margin 0 auto means 0 margin top and bottm and "auto" left and right- meaning equal margin on the left and right */
+}
+nav li a{
+    text-decoration: none;
+    color: #2b2b2b;
+}
+main{
+    width: 100%;
+    /* width: 1200px; */
+    /* padding: 0 40px; */
+    /* padding: 40px 120px;; */
+    box-sizing: border-box;
+    /* includes the padding in the total box sizing. without this, the padding will not be factored in and the text will be off screen when you resize the page. */
+}
+
+nav ul li a.signup{
+    color: #db1a19;
+    font-weight: bold;
+}
+
+article p{
+    padding-top: 10px;
+    padding-left: 5px;
+    line-height: 1.5em;
+}
+
+html, body{
+    /* height: 100%; */
+    min-height: 100vh;
+    /* min height because that allows sticky navbar to work properly. height: 100vh means if i scroll and the content goes past viewport, the body does not grow in size. min height being the viewport size means if i scrol the body grows to match the new heght */
+    overflow: visible;
+    /* 100% of viewport height */
+}
+article h2{
+    font-family: "gilroybold";
+    font-size: 2em;
+    color: #db1a19;
+}
+
+.join {
+    text-align: center;
+    background-color: #f4f4f4;
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    color: #4b4b4b;
+}
+.join h3{
+    font-size: 2em;
+    /* 2em is used so that changes in font-size using % affect it. using 36px doesn't for some reason */
+} 
+
+.join input{
+    border-radius: 28px;
+    border: 4px solid white;
+    width: auto;
+    min-width: 250px;
+    padding: 10px 15px;
+    /* padding is inside the input field itself, puts space between the borders of the field and the text inside */
+    font-size: 15px;
+}
+::placeholder{
+    text-align: center;
+    margin: 2px;
+}
+
+nav li:hover{
+    text-decoration: underline;
+}
+.signup:hover{
+    text-decoration: underline;
+    text-decoration-color: #db1a19;
+}
+div h2 span{
+    padding: 10px;
+    padding-right: 10px;
+}
+
+main article img:hover{
+    /* transform: scale(1.1);
+    transition: transform 0.25s; */
+    /* this makes the image grow to 120% of its original size when hovered over */
+    /* padding: 10px 10px; */
+    /* padding: 0px 0px; */
+    position: relative;
+    top: -4px;
+}
+
+form input:focus{
+    border: 2px solid #db1a19;
+    outline: none;
+
+}
+
+form input:valid{
+    border: 2px solid #4cbb17;
+    outline: none;
+}
+
+article p::first-letter{
+    font-size: 1.5em;
+    font-family: "inter";
+    font-weight: bold;
+    /* padding-right: 5px; */
+}
+
+article p::selection{
+    background-color: #db1a19;
+    color: white;
+}
+
+article{
+    width: auto;
+}
+
+article img{
+    padding: 10px;
+    padding-right: 20px;
+    width: 30% !important;
+    height: auto;
+    float:left;
+    /* padding-right: 10px; */
+}
+
+/* .container{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+/* } */
+
+/* .container p{
+    flex:1 1 300px;
+    min-width: 300px;
+}
+
+.container img{
+    flex-shrink: 0;
+    max-width: 30%;
+    height: auto;
+}  */
+
+
+@media screen and (max-width: 1500px){
+    article img{
+        width: 10vw;
+        height: auto;
+    }
+    body{
+        font-size: 85%;
+    }
+    nav{
+        top: 90px
+    }
+
+}
+
+@media screen and (max-width: 960px){
+    article{
+        margin: 125px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media screen and (max-width: 560px){
+    article{
+        margin: 75px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    article img{
+        width: 50vw !important;
+        height: auto;
+    }
+    header{
+        position: relative ;
+    }
+
+    nav{ 
+        top: 33px;
+    }
+    .welcometext{
+        position: absolute;
+        left: 1%;
+        top: 15%;
+        font-size: 0.8em;
+    }
+
+
+}
+
+.container1{ 
+    /* background-color: yellow; */
+}
+
+.container1 .megsfalling{
+    float:left;
+    width:30px;
+}

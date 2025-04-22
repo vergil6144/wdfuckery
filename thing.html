@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="thing.css">
+    <title>wzp</title> <!--this is the name that shows up on the tab-->
+    <header>starscream fans unite</header>
+</head>
+<body>
+    <img src="starscreammcb.jpg" alt="my babiest girlest babygirl">
+    <!-- look how tag attributes work, no commas or nthn just aise hi -->
+    <p><em><strong>starscream </strong></em><small>time, bitchez</small></p> <!--p for paragaph-->
+    <hr> <!--horizontal line-->
+    <form>
+        <!-- normally, the form has an action attribute that triggers a js/php script. -->
+        <label for="username">username:</label>
+        <!-- using the id attribute of the input tag to hook -->
+        <input type="text" id="username" required placeholder="gavin"><br><br>
+        <label for="email">email:</label>
+        <input type="email" id="email" required><br><br>
+        <!-- theres also a name attribute, useful for php/jstards -->
+        <label for="password" id = "pw">password:</label>
+        <input type="password" id="pw" required>
+        <!-- the required tag makes the form unsubmittable without the required things filled in -->
+        <p>radiobuttontest</p>
+        <input type="radio" name="gender1" id="1" value="ss">
+        <label for="1">starscream</label>
+        <!-- name value is kept the same so that only one option can be selected -->
+         <!-- id has to be unique -->
+        <input type="radio" name="gender" id="2" value="tc">
+        <label for="2">thundercracker</label>
+        <input type="radio" name="gender" id="2" value="tc">
+        <label for="2">skywarp</label>
+        <!-- starscream has a different name value than tc and sw, and so you can select starscream and then tc or sw -->
+        <!-- dropdownselection: -->
+         <br><br>
+         <label for="question">favourite song:</label>
+         <!-- the actual dropdownselection -->
+            <select name="question" id="question">
+                <option value="rl">radaerlove</option>
+                <!-- no labels for option values -->
+                <option value="rl">highwaystar</option>  
+                <!-- the "name" can be thought of like a class and the value as the, well, value that gets sent to serverside code when that option is chosen -->
+            </select>
+            <br><br>
+            <label for="teg">enterteggst</label> <br>
+            <!-- label depends on id not name -->
+            <textarea name="teg" id="teg" placeholder="weehaw"></textarea>
+           
+            <!-- placeholder text appears with less opacity and dissapeasr when you type as opposed to if i had put weehaw in between ></textarea> -->
+            <br><br><input type="submit" name="" id="", value="sub">
+    
+            <!-- in this case the value is whats shown on the button -->
+    </form>
+    <hr>
+    <a href="https://tfwiki.net/wiki/Starscream_(G1)">ref links</a><br><br>
+    <a href="https://www.w3schools.com/html/html_form_input_types.asp">checkthisout</a>
+    <ul> <!--unordered list, ol for ordered (numbered) list-->
+        
+        <li>starscream</li>
+        <li>sw</li>
+        <li>tc</li>
+    </ul>
+    <p class="un">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p> <br>
+    <span>smb</span> <br>
+    <div>smbdiv</div>
+    <div class = "un">undiv</div>
+    <br><br>
+    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. At corrupti, dignissimos natus libero minus autem nulla soluta vel ut est deleniti illo magni? Nihil iste incidunt explicabo soluta aut. Expedita.
+
+        <aside>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati libero cum est error nihil a assumenda perferendis, asperiores reprehenderit! Officiis deleniti doloribus doloremque sunt laboriosam in molestias nihil animi laudantium.</aside>
+    </article>
+</body>
+
+</html>

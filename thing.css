@@ -1,0 +1,82 @@
+@font-face {
+    /*used to define custom fonts and make them available for use throughout the CSS file */
+    font-family: tfmovie;
+    src: url(./transformers_movie/tffont.ttf);
+}
+
+p{
+    display: block;
+    color:orange;
+    background-color: aqua;
+    font-size: 20px;
+    font-family: "tfmovie";
+    text-align: center;
+    letter-spacing: 3px;
+}
+form{
+    text-decoration:wavy;
+    color: blueviolet;
+    background-color: aliceblue;
+    line-height: 30px;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: aqua;
+    border-top-color: bisque;
+}
+.un {
+    color: yellow;
+    text-align: left;
+    text-decoration: none;
+    column-count: 4;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:larger;
+}
+
+
+/* p.un works, but will only style the p tag with un class and not all un classes, which .un does*/
+
+li{
+    list-style-type: none;
+    text-shadow: 5px 5px green;
+}
+span{
+    display: block;
+    border: 5px solid green;
+    margin: 10px;
+    text-align: center;
+}
+div{
+    border: 2px solid green;
+    margin: 10px;
+    padding: 500px;
+    text-align: center;
+}
+/* html{
+    display: inline-block;
+} */
+div.un{
+    display: block;
+    color: orange;
+    border: none;
+    margin: 10px;
+    padding: 50px;
+    text-align: center;
+}
+/* div.un is div of class un */
+/* div.un takes priority over .un due to being more specific */
+/* div .un is a parent selector - look for class un inside the tags inside a div tag */
+a[href]{
+    color: burlywood;
+}
+a[href="https://tfwiki.net/wiki/Starscream_(G1)"]{
+    color: yellowgreen;
+}
+header{
+    text-align: center;
+    font-family: "tfmovie";
+    font-size: 100px;
+    color: white;
+    background-color: red;
+}
+/* square brackets are for attributes, so a[href] gets every a with a href attribtue */
+/* a[href="whatever.com"] takes priority over a[href], only targeting hrefs with that specific link*/

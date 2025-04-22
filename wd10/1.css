@@ -1,0 +1,158 @@
+@font-face {
+    font-family: digital;
+    src: url(./Digital.ttf);
+}
+
+@font-face {
+    /*used to define custom fonts and make them available for use throughout the CSS file */
+    font-family: inter;
+    src: url(./Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    /*used to define custom fonts and make them available for use throughout the CSS file */
+    font-family: gilroy;
+    src: url(GILROY-MEDIUM.TTF);
+}
+
+@font-face {
+    /*used to define custom fonts and make them available for use throughout the CSS file */
+    font-family: gilroyb;
+    src: url(GILROY-BOLD.TTF);
+}
+
+/* .clock{
+    font-family: 'digital';
+    font-size: 72px;
+    color: crimson;
+    text-align: center;
+    margin-top: 20%;
+}
+
+body{
+    background-color: black;
+}
+
+.date{
+    font-size: 36px;
+} */
+
+body{
+    background: #eeedec;
+}
+
+.container{
+    margin-left: 5%;
+    margin-right:5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: inter;
+}
+
+h1{
+    text-align: center;
+    margin-left: 4%;
+    margin-right:4%;
+    color: #6c757d;
+    font-family: gilroyb;
+    margin-top: 2%;
+    margin-bottom: 1.5%
+}
+
+.container form{
+    margin-left: 4%;
+    margin-right:4%;
+    text-align: center;
+    color: #6c757d
+
+}
+
+.container input{
+    display: block;
+    width: 80%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .35rem;
+    /* padding: 0.3%; */
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    max-width: 25.5%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.container label{
+}
+
+.card{
+    margin-top:150px;
+    margin: auto;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    border-radius: 0.75rem;
+    height: 535px;
+    width: 400px;
+    position: fixed;
+    left: 39.6%
+}
+
+.container img{
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+
+
+
+}
+
+.icon{
+    background: #ced4da;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.details{
+    color: #6c757d;
+    text-align: center;
+}
+
+.hide{
+    display: none
+}
+h3{
+    margin-top: -35px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+img{
+    max-width: 400px;
+    padding-left: auto;
+    padding-right: auto;
+
+}
+
+.icon{
+    margin-top: 5px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    margin-bottom: 0px;
+    position: relative;
+    top: -50px;
+
+}
+
+.icon img{
+    position: relative;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    right: 2.5px;
+    top: 5px;
+}
