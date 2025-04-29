@@ -214,7 +214,7 @@ img{
 .night .changeloc input{
     background-color: #2a2649;
     border: none;
-    color: white;
+    color: #ffeb98;
 }
 
 .day .card{
@@ -229,5 +229,5 @@ img{
     /* background-color: orange; */
     background-color: #ffcb4f;
     border: none;
-    color: white;
+    color: #783511;
 }
