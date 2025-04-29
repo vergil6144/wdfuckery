@@ -105,6 +105,7 @@ h1{
 }
 
 .card{
+    transition: background-color 0.35s ease, color 0.35s ease;
     margin-top:150px;
     margin: auto;
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
@@ -124,6 +125,7 @@ h1{
 }
 
 .icon{
+    transition: background-color 0.35s ease;
     background-color: #ced4da;
     margin-left: auto;
     margin-right: auto;
@@ -167,7 +169,8 @@ img{
 }
 
 .icon img{
-    filter: invert(100%);
+    /* filter: invert(100%); */
+    filter: invert(88%) sepia(25%) saturate(643%) hue-rotate(344deg) brightness(103%) contrast(104%);
     position: relative;
     max-width: 80px;
     max-height: 80px;
@@ -216,6 +219,10 @@ img{
 
 .day .card{
     background-color: #ffd061;
+}
+
+.day .icon img{
+    /* filter: invert(1); */
 }
 
 .day .changeloc input{
