@@ -38,10 +38,19 @@ body{
 } */
 
 body{
-    background: #eeedec;
+    background-color: #eeedec;
+    transition: background-color 0.35s ease, color 0.35s ease;
+
+    /* transition: color 0.4s ease; */
+
+
+    /* color: white; */
 }
 
+
+
 .container{
+    /* transition: background-color 50s; */
     margin-left: 5%;
     margin-right:5%;
     margin-top: auto;
@@ -53,17 +62,21 @@ h1{
     text-align: center;
     margin-left: 4%;
     margin-right:4%;
-    color: #6c757d;
+    /* color: #6c757d; */
+    /* color: white; */
+
     font-family: gilroyb;
     margin-top: 2%;
-    margin-bottom: 1.5%
+    margin-bottom: 0.9%
 }
 
 .container form{
     margin-left: 4%;
     margin-right:4%;
     text-align: center;
-    color: #6c757d
+    /* color: #6c757d */
+    /* color: white; */
+
 
 }
 
@@ -84,10 +97,11 @@ h1{
     margin-right: 20%; */
     max-width: 25.5%;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .container label{
+    /* padding-bottom: 1000px; */
 }
 
 .card{
@@ -110,14 +124,15 @@ h1{
 }
 
 .icon{
-    background: #ced4da;
+    background-color: #ced4da;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
 .details{
-    color: #6c757d;
+    /* color: #6c757d; */
+    /* color: white; */
     text-align: center;
 }
 
@@ -138,21 +153,74 @@ img{
 }
 
 .icon{
+    /* background: #2a2649; */
     margin-top: 5px;
     max-width: 80px;
     max-height: 80px;
     border-radius: 50%;
-    margin-bottom: 0px;
+    margin-bottom: -1px;
     position: relative;
-    top: -50px;
+    top: -45px;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .icon img{
+    filter: invert(100%);
     position: relative;
     max-width: 80px;
     max-height: 80px;
     border-radius: 50%;
-    right: 2.5px;
-    top: 5px;
+    /* right: 2.5px;
+    top: 5px; */
+}
+
+.night{
+    background-color: #352f5b;
+    /* color:white; WITE*/
+    color: #ffeb98;
+}
+
+.night .icon{
+    background-color: #2a2649;
+}
+
+.day .icon{
+    background-color: orange;
+}
+
+.day{
+    background-color: #fce09d;
+    color: #783511 !important;
+}
+
+.normal * {
+    color: #3c4145 !important;
+}
+
+.night .card{
+    background-color: #42396e;
+}
+
+.night .card * {
+    color: #ffeb98;
+    /* WITE */
+}
+
+.night .changeloc input{
+    background-color: #2a2649;
+    border: none;
+    color: white;
+}
+
+.day .card{
+    background-color: #ffd061;
+}
+
+.day .changeloc input{
+    /* background-color: orange; */
+    background-color: #ffcb4f;
+    border: none;
+    color: white;
 }

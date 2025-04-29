@@ -84,6 +84,7 @@ const card = document.querySelector('.card')
 const details = document.querySelector('.details')
 const img = document.querySelector('.img')
 const icon = document.querySelector('.icon')
+const body = document.querySelector('body')
 
 const updateui = (data)=>{
     // const citydets = data.citydets
@@ -99,10 +100,21 @@ const updateui = (data)=>{
     if(weather.IsDayTime){
         console.log('fu')
         img.innerHTML = `<img src="day.svg" alt="placeholder" class="time">`
+        body.classList.add('day')
+        body.classList.remove('normal')
+        body.classList.remove('night')
+
+
 
     }else{
         console.log('fu')
         img.innerHTML = `<img src="night.svg" alt="placeholder" class="time">`
+        body.classList.add('night')
+        body.classList.remove('normal')
+        body.classList.remove('day')
+
+
+
     }
 }
 
