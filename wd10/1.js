@@ -123,6 +123,8 @@ cform.addEventListener('submit', (e)=>{//listening for the event submission
     card.classList.remove('hide')
     e.preventDefault()//prevent the refresh
     const city = cform.city.value.trim() //name of input is icty
+    localStorage.setItem('city',city)
+    console.log(localStorage)
     cform.reset()//clear the form post submission
     // console.log(city)
     updatecity(city).then(data=>{ //passes the city value to update city function
@@ -137,3 +139,10 @@ const updatecity = async (city)=>{
     const weather = await getweather(citydets.Key)//gets the key from the city details
     return{citydets, weather} //assumes the property and value are both citydets and weather (when the property name is the same as the value name)
 }
+
+if(localStorage.getItem('city')){
+    card.classList.remove('hide')
+    updatecity(localStorage.getItem('city'))
+    .then(data=>updateui(data))
+    .catch(err=>console.log(err))
+} //string of any length is true
