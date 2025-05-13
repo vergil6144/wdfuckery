@@ -80,6 +80,9 @@
 
 //returns a promise
 
+
+const fc = new forecast()
+// console.log(forecast.updatecity)
 const card = document.querySelector('.card')
 const details = document.querySelector('.details')
 const img = document.querySelector('.img')
@@ -127,7 +130,7 @@ cform.addEventListener('submit', (e)=>{//listening for the event submission
     console.log(localStorage)
     cform.reset()//clear the form post submission
     // console.log(city)
-    updatecity(city).then(data=>{ //passes the city value to update city function
+    fc.updatecity(city).then(data=>{ //passes the city value to update city function
         console.log(data)//logs what updatecity returns
         updateui(data)
     }).catch(err=>{console.log(err)})
