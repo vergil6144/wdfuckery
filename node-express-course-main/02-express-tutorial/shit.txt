@@ -1,0 +1,38 @@
+const express = require('express')
+const app = express()
+const {people} = require("./data")
+
+app.use(express.static('./methods-public')) //runs files stored in methods-public folder by adding it to static assets
+app.use(express.urlencoded({extended:false})) //no fucking clue
+app.use(express.json())
+
+app.get('/api/people',(req,res)=>{
+    res.status(200).json({success:true,data:people})
+    //res.send(people)
+})
+
+app.post('/api/people',(req,res)=>{
+    const {name} = req.body
+    console.log(name)
+    console.log(req.body)
+    // console.log(req)
+    if(!name){
+        return res.json({success:false,msg:'providename'})
+    } 
+    return res.json(201).send({success:true,person:"name"})
+})
+
+
+app.post('/login',(req,res)=>{ 
+    const {name} = req.body //bcos of the form name being name
+    if(name){
+        console.log(name)
+        res.status(200).send(`hi ${name}`)
+    } else{
+        res.status(401).send('provide credentials')
+    }
+})
+
+app.listen(5000,()=>{
+    console.log('serverlistening')
+})
